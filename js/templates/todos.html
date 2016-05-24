@@ -1,0 +1,10 @@
+<div class="todo <%= done ? 'done' : '' %>">
+    <div class="display">
+        <input type="checkbox" class="check" <%= done ? 'checked="checked"' : '' %>/>
+        <div class="todo-content"><%- content %></div>
+        <span class="todo-destroy"></span>
+    </div>
+    <div class="edit">
+        <input type="text" class="todo-input" value="<%- content%>"/>
+    </div>
+</div>

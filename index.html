@@ -1,24 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/base.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-    <script src="js/libs/require/require.js" main-src="js/main.js"></script>
+    <title>Modular Todo App</title>
+    <link rel="stylesheet" href="css/todos.css">
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
 </head>
 <body>
-<div id="todoapp" class="todoapp">
-    <div class="content">
-        <div id="create-todo" class="create-todo">
-            <input type="text" id="new-todo" class="new-todo" placeholder="What needs to be done?"/>
-            <span class="ui-tooltip-top">Press Enter to save this task</span>
-        </div>
-        <div id="todos" class="todos">
-            <ul id="todo-list" class="todo-list"></ul>
-        </div>
-        <div id="todo-stats" class="todo-stats"></div>
+
+<div id="todoapp">
+
+    <div class="title">
+        <h1>Todos</h1>
     </div>
+
+    <div class="content">
+
+        <div id="create-todo">
+            <input id="new-todo" placeholder="What needs to be done?" type="text" />
+            <span class="ui-tooltip-top" style="display:none;">Press Enter to save this task</span>
+        </div>
+
+        <div id="todos">
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div id="todo-stats"></div>
+
+    </div>
+
+    <div class="ui-tooltip-top">press `enter` to save</div>
 </div>
+
+
 </body>
 </html>
