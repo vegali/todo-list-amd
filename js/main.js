@@ -1,3 +1,8 @@
+/*
+* require 配置映射
+*
+* */
+
 require.config({
     paths : {
         jquery : 'libs/jquery',
@@ -7,6 +12,9 @@ require.config({
         text : 'libs/require/text'
     },
 
+    /*
+    * shim 配置依赖关系
+    * */
     shim : {
         underscore : {
             exports : '_'
